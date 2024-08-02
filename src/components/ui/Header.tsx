@@ -9,11 +9,11 @@ interface HeaderProps {
 
 const Header : React.FC<HeaderProps> = ({ }) => {
     return (
-        <div >
+        <div>
         <Accueil/>
         <Services/>
         <Contact/>
-    </div>
+        </div>
     )
 }
 

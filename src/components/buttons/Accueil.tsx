@@ -2,7 +2,9 @@ import React from "react";
 
 const Accueil: React.FC = () => {
     return (
-        <h1>Accueil</h1>
+        <button> 
+            <span>Accueil</span>
+        </button >
     )
 }
 
