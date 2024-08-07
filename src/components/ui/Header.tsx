@@ -1,7 +1,5 @@
 import React from "react";
-import Accueil from "../buttons/Accueil";
-import Services from "../buttons/Services";
-import Contact from "../buttons/Contact";
+import ButtonHeader from "./ButtonHeader";
 
 interface HeaderProps {
     name: string;
@@ -9,11 +7,14 @@ interface HeaderProps {
 
 const Header : React.FC<HeaderProps> = ({ }) => {
     return (
-        <div>
-        <Accueil/>
-        <Services/>
-        <Contact/>
-        </div>
+        <header className="header">
+            <div className="header">
+                <ButtonHeader name ="Accueil"/>
+                <ButtonHeader name ="Services"/>
+                <ButtonHeader name ="Qui sommes-nous ? "/>
+                <ButtonHeader name ="Contact"/>
+            </div>
+        </header>
     )
 }
 
