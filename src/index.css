@@ -3,23 +3,35 @@ body, html {
   height: 100%;
   margin: 0;
   display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
 }
 
 /* Style pour le header */
 .header {
-  background-color: #f8f9fa;
+  background-color: #e41b1b;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  position: fixed; /* Rendre le header fixe */
+  top: 0; /* Positionner en haut */
+  left: 0; /* Positionner à gauche */
+  width: 100%; /* Prendre toute la largeur de l'écran */
+  z-index: 1000; /* Assurer que le header est au-dessus du contenu */
 }
 
 /* Style pour le conteneur des boutons */
 .header-nav {
   display: flex;
-  gap: 10px; /* Espace entre les boutons */
+  gap: 10px; /* Corriger l'espacement entre les boutons */
+}
+
+/* Ajoute un padding-top au body pour éviter que le contenu soit caché derrière le header */
+body::before {
+  content: "";
+  display: block;
+  height: 80px; /* Ajuste cette hauteur selon la hauteur réelle de ton header */
 }
 
 /* Style pour chaque bouton */
@@ -59,3 +71,5 @@ body, html {
 .button-header:hover::before {
   width: 100%;
 }
+
+
