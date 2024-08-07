@@ -149,10 +149,35 @@ body::before {
 
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  color: white;
+  flex-direction: row-reverse;
+  justify-content: space-between; /* Distribue l'espace entre les éléments */
+  align-items: center; /* Aligne les éléments verticalement au centre */
   padding: 20px;
   margin-top: auto;  /* Permet au footer d'être poussé au bas du container */
+  background-color: #333; /* Ajoute une couleur de fond pour que le texte soit visible */
 }
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centre le texte au milieu */
+  flex: 1; /* Permet à cette div de prendre autant d'espace que possible */
+}
+
+.footer-list {
+  flex: 1; /* Permet à cette div de prendre autant d'espace que possible */
+  display: flex;
+  justify-content: flex-start; /* Aligne la liste à gauche */
+}
+
+.footer-list ul {
+  list-style: none; /* Enlève les puces */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-right: 50px; /* Espace entre les éléments de la liste */
+  color: white;
+}
+
+

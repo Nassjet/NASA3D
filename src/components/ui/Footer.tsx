@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Footer: React.FC = ({}) => {
   return (
     <footer className="footer">
@@ -31,6 +30,23 @@ const Footer: React.FC = ({}) => {
       </div>
 
       {/*insérer la suite du footer ici */}
+
+      <div className="footer-list">
+        <ul>
+          <li>
+            <a href="">Accueil</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <a href="">Qui sommes-nous ?</a>
+          </li>
+          <li>
+            <a href="">Devis</a>
+          </li>
+        </ul>
+      </div>
 
       <div className="footer-content">
         <p>&copy;2024 NASA3D | All Rights Reserved</p>
