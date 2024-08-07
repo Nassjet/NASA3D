@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <Header name = "Bienvenue chez Nasa3D"/>
-    <Footer name = "truc"/>
+    <Footer/>
     </>
   );
 }
