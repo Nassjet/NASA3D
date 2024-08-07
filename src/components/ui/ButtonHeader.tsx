@@ -8,7 +8,7 @@ interface ButtonHeaderProps {
 const ButtonHeader : React.FC<ButtonHeaderProps> = ({name}) => {
     return (
         <button className="button-header">
-            {name}
+            <a href="">{name}</a>
         </button>
     )
 }
